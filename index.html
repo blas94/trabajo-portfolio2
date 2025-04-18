@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macowens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/icono-macowens.png" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar p-0 navbar-1">
+            <div class="collapse navbar-collapse navbar navbar-expand-lg bg-light d-flex justify-content-center gap-5 py-4"
+                id="navbarNav">
+                <img src="./img/logo-macowens.png" alt="logo">
+                <ul class="navbar-header navbar-nav fw-bold gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section-1" aria-current="page">QUIENES SOMOS</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section-2">INTRODUCCIÓN PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section-3">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section-4" aria-disabled="true">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#nosotrosModal">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section-5" aria-disabled="true">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal fade" id="nosotrosModal" tabindex="-1" aria-labelledby="nosotrosModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="nosotrosModalLabel">Nosotros</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <img src="img/foto-santiago-castaño.png" class="card-img-top" alt="n1">
+                                <div class="card-body">
+                                    <p class="card-text">Santiago Felipe Castaño<br>
+                                        años<br>santiago.castano@davinci.edu.ar</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/foto-tomas-misrahi.png" class="card-img-top" alt="n2">
+                                <div class="card-body">
+                                    <p class="card-text">Tomas Misrahi<br>22 años<br>tomas.misrahi@davinci.edu.ar</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/foto-blas-occofer.png" class="card-img-top" alt="n3">
+                                <div class="card-body">
+                                    <p class="card-text">Blas Occofer<br>20 años<br>blas.occofer@davinci.edu.ar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary fixed-top navbar-2">
+            <div class="container-fluid">
+                <img src="./img/logo-macowens.png" alt="logo2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-header navbar-nav fw-bold gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section-1" aria-current="page">QUIENES SOMOS</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section-2">INTRODUCCIÓN PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section-3">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section-4" aria-disabled="true">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="modal"
+                                    data-bs-target="#nosotrosModal">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section-5" aria-disabled="true">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/foto1-slider.png" class="d-block w-100" alt="slider1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/foto2-slider.png" class="d-block w-100" alt="slider2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/foto3-slider.png" class="d-block w-100" alt="slider3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="section-1" class="seccion-1 mx-auto p-5">
+            <div>
+                <h1 class="accordion-header text-center pb-2 ">
+                    Macowens
+                </h1>
+                <h2 class="accordion-header text-center">
+                    Descripción de la marca
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show mt-3 text-center justify-content-center"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Macowens</strong> es una destacada marca de calzado y accesorios que ha sabido
+                        posicionarse en el mercado por su enfoque en la calidad y el diseño contemporáneo. Fundada en el
+                        corazón de Argentina, la empresa ha recorrido un camino significativo desde sus inicios, donde
+                        un grupo de artesanos se unió para crear productos que combinan tradición y modernidad. A lo
+                        largo de los años, Macowens ha ampliado su catálogo, incorporando líneas que van desde calzado
+                        elegante hasta opciones casuales, siempre con una atención meticulosa a los detalles y un
+                        compromiso con la excelencia.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion px-5 mt-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            La filosofía de la marca
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center">
+                            La filosofía de <strong>Macowens</strong> se basa en la sostenibilidad y la responsabilidad
+                            social. La marca se esfuerza por utiliz ar materiales de alta calidad y procesos de
+                            producción
+                            que respeten el medio ambiente, además de apoyar a comunidades locales mediante prácticas de
+                            comercio justo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Los objetivos de la marca
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center">
+                            Los objetivos de <strong>Macowens</strong> incluyen no solo ofrecer productos que satisfagan
+                            las
+                            necesidades de sus clientes, sino también fomentar un estilo de vida más consciente y
+                            sostenible. Al hacerlo, Macowens no solo busca ser un referente en el sector del calzado,
+                            sino
+                            también inspirar a otros a adoptar valores de sostenibilidad en sus elecciones diarias.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-2" class="seccion-2 mx-auto p-2">
+            <div class="p-5">
+                <h2 class="text-center">Introducción de los productos</h2>
+
+                <p class="text-center">Macowens se especializa en ofrecer prendas de ropa contemporáneas que combinan
+                    estilo y comodidad,
+                    destacándose por su atención al detalle y el uso de materiales de alta calidad. La colección incluye
+                    desde vestidos elegantes y camisas sofisticadas hasta ropa casual y versátil, ideal para cualquier
+                    ocasión. Cada pieza refleja un diseño moderno y una paleta de colores cuidadosamente seleccionada,
+                    pensada para el cliente que busca un guardarropa funcional y a la moda. Además, Macowens incorpora
+                    accesorios complementarios que realzan el estilo, ofreciendo una experiencia completa de moda.</p>
+            </div>
+        </section>
+
+        <section id="section-3" class="seccion-3 container">
+            <div class="d-flex flex-wrap justify-content-center gap">
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card1-pc.png" class="card-img-top" alt="card1">
+                            <source media="(min-width: 769px)" srcset="img/card1.png">
+                            <source media="(min-width: 320px)" srcset="img/card1-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Camisa casual oxford rayada celeste</p>
+                            <p class="card-text">Ideal para un look versátil y fresco, ideal para dias calidos.</p>
+                            <p class="card-text"><strong>$ 59.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn rounded-3"
+                                                style="background-color: #082f62; color: white" data-bs-dismiss="modal">
+                                                Aceptar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card2.jpg" class="card-img-top" alt="card2">
+                            <source media="(min-width: 769px)" srcset="img/card2-pc.png">
+                            <source media="(min-width: 320px)" srcset="img/card2-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Saco Premium Melange Azul Marino</p>
+                            <p class="card-text">Elegante y sofisticado, perfecto para destacar en eventos formales.</p>
+                            <p class="card-text"><strong>$ 99.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn rounded-3"
+                                                style="background-color: #082f62; color: white" data-bs-dismiss="modal">
+                                                Aceptar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card3.jpg" class="card-img-top" alt="card3">
+                            <source media="(min-width: 769px)" srcset="img/card3-pc.png">
+                            <source media="(min-width: 320px)" srcset="img/card3-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Chaleco de vestir SS100 Liso slim negro</p>
+                            <p class="card-text">Un complemento esencial para el atuendo formal.</p>
+                            <p class="card-text"><strong>$ 49.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn rounded-3"
+                                                style="background-color: #082f62; color: white" data-bs-dismiss="modal">
+                                                Aceptar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card4.jpg" class="card-img-top" alt="card4">
+                            <source media="(min-width: 769px)" srcset="img/card4-pc.png">
+                            <source media="(min-width: 320px)" srcset="img/card4-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Chomba jersey rayada beige</p>
+                            <p class="card-text">Casual y ligera, perfecta para un look relajado.</p>
+                            <p class="card-text"><strong>$ 29.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn rounded-3"
+                                                style="background-color: #082f62; color: white" data-bs-dismiss="modal">
+                                                Aceptar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card5.jpg" class="card-img-top" alt="card5">
+                            <source media="(min-width: 769px)" srcset="img/card5-pc.png">
+                            <source media="(min-width: 320px)" srcset="img/card5-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Medias Sport Lisa Azul Marino</p>
+                            <p class="card-text">Cómodas y prácticas para el día a día.</p>
+                            <p class="card-text"><strong>$ 7.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn rounded-3"
+                                                style="background-color: #082f62; color: white" data-bs-dismiss="modal">
+                                                Aceptar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-3" style="width: 17rem;">
+                        <picture>
+                            <img src="img/card6.jpg" class="card-img-top" alt="card6">
+                            <source media="(min-width: 769px)" srcset="img/card6-pc.png">
+                            <source media="(min-width: 320px)" srcset="img/card6-mobile.png">
+                        </picture>
+                        <div class="card-body text-center">
+                            <p class="card-title">Sobretodo clásico negro</p>
+                            <p class="card-text">Elegancia y calidez para días fríos.</p>
+                            <p class="card-text"><strong>$ 149.990</strong></p>
+                            <button type="button" class="btn rounded-3" style="background-color: #082f62; color: white"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar al carrito
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title fs-5" id="staticBackdropLabel">Agregado al carrito
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">El producto ha sido agregado al carrito</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-4" class="seccion-4 mx-auto p-2">
+            <div class="p-5 text-center">
+                <h2>Lo más vendido</h2>
+                <p>Explorá lo más vendido de los últimos meses en nuestra galería de fotos y
+                    descubrí las prendas favoritas de nuestros clientes, las cuales han marcado las tendencias de la
+                    temporada. Encontrá piezas únicas que combinan calidad, estilo y versatilidad, ideales para
+                    acompañarte en cada ocasión y reflejar tu personalidad con elegancia. Cada artículo en nuestra
+                    colección más vendida representa lo mejor del diseño y la excelencia que nos caracteriza</p>
+                <p>En <strong>Macowens</strong>, nos enorgullece ofrecerte lo mejor en calidad y
+                    diseño. Nuestra galería de productos más vendidos está repleta de indumentaria que nuestros clientes
+                    adoran y que se han convertido en esenciales para el día a día.</p>
+            </div>
+
+            <div class=" container col-md-10 mb-5 d-flex justify-content-center gap-5 flex-wrap">
+                <picture>
+                    <img src="./img/foto1tab.png" style="width: 18rem;" class="img-thumbnail" alt="galeria1">
+                    <source media="(min-width: 769px)" srcset="img/foto1-galeria.jpg">
+                    <source media="(min-width: 320px)" srcset="img/foto1cel.png">
+                </picture>
+                <picture>
+                    <img src="./img/foto2-galeria.jpg" style="width: 18rem;" class="img-thumbnail" alt="galeria2">
+                    <source media="(min-width: 769px)" srcset="img/foto2tab.png">
+                    <source media="(min-width: 320px)" srcset="img/foto2cel.png">
+                </picture>
+                <picture>
+                    <img src="./img/foto3-galeria.jpg" style="width: 18rem;" class="img-thumbnail" alt="galeria3">
+                    <source media="(min-width: 769px)" srcset="img/foto3tab.png">
+                    <source media="(min-width: 320px)" srcset="img/foto3cel.png">
+                </picture>
+                <picture>
+                    <img src="./img/foto4-galeria.jpg" style="width: 18rem;" class="img-thumbnail" alt="galeria4">
+                    <source media="(min-width: 769px)" srcset="img/foto4tab.png">
+                    <source media="(min-width: 320px)" srcset="img/foto4cel.png">
+                </picture>
+                <picture>
+                    <img src="./img/foto5-galeria.jpg" style="width: 18rem;" class="img-thumbnail" alt="galeria5">
+                    <source media="(min-width: 769px)" srcset="img/foto5tab.png">
+                    <source media="(min-width: 320px)" srcset="img/foto5cel.png">
+                </picture>
+                <picture>
+                    <img src="./img/foto6-galeria.jpg" style="width: 18rem;" class="img-thumbnail" alt="galeria6">
+                    <source media="(min-width: 769px)" srcset="img/foto6tab.png">
+                    <source media="(min-width: 320px)" srcset="img/foto6cel.png">
+                </picture>
+            </div>
+        </section>
+
+        <section id="section-5">
+            <div class="container p-5">
+                <form class="row g-3 needs-validation bg-body-secondary rounded-3 p-3" novalidate>
+                    <p class="d-flex justify-content-center">
+                        Contactate con nosotros
+                    </p>
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" required />
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required />
+                            <div class="invalid-feedback">Email inválido</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="validationCustom02" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="validationCustom02" required />
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustomComments" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="validationCustomComments"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                            <label class="form-check-label px-1" for="invalidCheck">
+                                Aceptar las condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                                Acepta los términos para continuar
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn rounded-3" style="background-color: #082f62; color: white" type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-dark">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start mb-4">
+                <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-5">
+                    <p class="text-uppercase mb-4 font-weight-bold" style="color: #082f62;">Nosotros</p>
+                    <hr class="mb-4">
+                    <p>Macowens es una empresa argentina dedicada a la fabricación y venta de ropa y accesorios de moda,
+                        destacándose por ofrecer productos de calidad, cómodos y con diseños modernos. Fundada en 1990,
+                        la marca ha logrado posicionarse en el mercado local.</p>
+                </div>
+                <div class="col-md-2 col-lgl2 col-xl-2 mx-auto mt-5">
+                    <p class="text-uppercase mb-4 font-weight-bold" style="color: #082f62;">Contactos</p>
+                    <hr class="mb-4">
+                    <div>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.instagram.com/" target="_blank">instagram</a>
+                            <a href="https://www.facebook.com/?locale=es_LA" target="_blank">facebook</a>
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-2">
+            <hr>
+            <p>
+                Copyright © 2024 Macowens - Todos los derechos reservados
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
